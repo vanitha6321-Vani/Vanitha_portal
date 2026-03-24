@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #530cc5;
+            margin: 0;
+        }
+
+        .nav {
+            background: #d9d61d;
+            padding: 15px;
+            color: white;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 10px;
+            background: #abe116;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .logout {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">Student Portfolio Dashboard</div>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Welcome {{ user }} 👋</h2>
+        <p>This is my personal dashboard</p>
+    </div>
+
+    <div class="card">
+        <h2>💼 My Projects</h2>
+        <ul>
+            <li>Numbering Game (Python Project)</li>
+            <li>Student Portal (Flask Project)</li> <br>
+            <p>Click below to view my projects:</p>
+            <a class="button" href="https://vanitha6321-vani.github.io/Numbering-Game/" target="_blank">
+                View Project
+            </a>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🌐 My Portfolio</h2>
+        <p>Click below to view my portfolio:</p> <br>
+        <a class="button" href="https://vanitha6321-vani.github.io/Vanitha/" target="_blank">
+            View Portfolio
+        </a>
+    </div>
+
+    <div class="card">
+        <a class="button logout" href="/logout">Logout</a>
+    </div>
+
+</div>
+
+</body>
+</html>
